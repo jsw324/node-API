@@ -26,3 +26,5 @@ app.post('/todos', (req, res) => {
 app.listen(4000, () => {
   console.log('Started express server on port 4000');
 });
+
+module.exports = { app };
