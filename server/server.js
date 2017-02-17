@@ -50,7 +50,6 @@ app.get('/todos/:id', authenticate, (req, res) => {
       _creator: req.user._id
     }).then((todo) => {
     if (todo) {
-      console.log({todo});
       res.send({todo});
     } else {
       return res.status(404).send();
